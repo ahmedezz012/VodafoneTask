@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_xxsmall">8sp</dimen>
+    <dimen name="font_xsmall">10sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_medium">14sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_xlarge">18sp</dimen>
+    <dimen name="font_xxlarge">24sp</dimen>
+    <dimen name="font_xxxlarge">32sp</dimen>
+
+    <dimen name="padding_xSmall">1dp</dimen>
+    <dimen name="padding_small">3dp</dimen>
+    <dimen name="padding_medium">6dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+    <dimen name="padding_xlarge">20dp</dimen>
+    <dimen name="padding_xxlarge">28dp</dimen>
+
+    <dimen name="margin_xSmall">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+    <dimen name="margin_xxlarge">32dp</dimen>
+    <dimen name="margin_xxxlarge">48dp</dimen>
+    <dimen name="margin_xxxxlarge">56dp</dimen>
+    <dimen name="margin_xxxxxlarge">64dp</dimen>
+    <dimen name="margin_xxxxxxlarge">72dp</dimen>
+    <dimen name="margin_xxxxxxxlarge">88dp</dimen>
+
+    <dimen name="btn_error_height">35dp</dimen>
+    <dimen name="btn_error_width">208dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
+    <dimen name="elevation">3dp</dimen>
+    <dimen name="imageHeight">300dp</dimen>
+
+    <dimen name="detailsImageHeight">400dp</dimen>
+</resources>

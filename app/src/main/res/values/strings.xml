@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VodafoneTask</string>
+    <string name="no_results_found">No results found</string>
+    <string name="offline">No network, Please check connection</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="retry">Retry</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="photo_details">Photo details</string>
+    <string name="adPlaceHolder">Put your ad here</string>
+</resources>

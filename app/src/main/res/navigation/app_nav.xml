@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/photosListingFragment">
+
+    <fragment
+        android:id="@+id/photosListingFragment"
+        android:name="com.ezz.vodafonetask.ui.photos_listing.PhotosListingFragment"
+        android:label="PhotosListingFragment" >
+        <action
+            android:id="@+id/action_photosListing_to_photoDetails"
+            app:destination="@id/photoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoDetailsFragment"
+        android:name="com.ezz.vodafonetask.ui.photo_details.PhotoDetailsFragment">
+        <argument
+            android:name="photoDetailsData"
+            app:argType="com.ezz.vodafonetask.data.models.navigation_component_dto.PhotoDetailsData" />
+    </fragment>
+
+</navigation>

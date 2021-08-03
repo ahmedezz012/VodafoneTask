@@ -1,0 +1,102 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ezz.vodafonetask"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        buildConfigField ("String", "BASE_NETWORK_URL", "\"https://picsum.photos/v2/\"")
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures{
+        viewBinding true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    def constraintLayoutVersion = '2.0.4'
+    def dagger2Version = '2.28.3'
+    def googleMaterial = '1.4.0'
+    def lifeCycleExtensions = '2.2.0'
+    def androidxCoreKotlin = '1.3.1'
+    def Gson = '2.8.6'
+    def retrofit2Version = '2.9.0'
+    def okhttpLogging = '4.9.0'
+    def rxAndroid = '2.1.1'
+    def rxJava = '2.2.19'
+    def glide = '4.12.0'
+    def swipeRefresh='1.1.0'
+    def room_version = '2.3.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swipeRefresh"
+    implementation "com.google.android.material:material:$googleMaterial"
+
+    // Dependency injection
+    implementation "com.google.dagger:dagger:$dagger2Version"
+    implementation "com.google.dagger:dagger-android-support:$dagger2Version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2Version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger2Version"
+
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifeCycleExtensions"
+    // Kotlin
+    implementation "androidx.core:core-ktx:$androidxCoreKotlin"
+    // GSON and retrofit
+    implementation "com.google.code.gson:gson:$Gson"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2Version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2Version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpLogging"
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid"
+    // Picasso
+    implementation "com.github.bumptech.glide:glide:$glide"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide"
+
+    //room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    implementation 'androidx.palette:palette-ktx:1.0.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.2.0'
+
+    compileOnly 'com.github.pengrad:jdk9-deps:1.0'
+    testImplementation "io.mockk:mockk:1.10.0"
+    testImplementation 'junit:junit:4.+'
+
+}

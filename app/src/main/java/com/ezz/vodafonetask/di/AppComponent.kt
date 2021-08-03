@@ -23,7 +23,7 @@ interface AppComponent {
 
         fun create(@BindsInstance applicationContext: Context): AppComponent
     }
-    
+
     fun photosListingComponent(): PhotosListingComponent.Factory
 
     fun photoDetailsComponent(): PhotoDetailsComponent.Factory
